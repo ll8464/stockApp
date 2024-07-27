@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock API</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Below removes the favion error in the console log-->
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <div id="title"><h1>Stock API</h1></div>
+
+    <form action="http://127.0.0.1:8080/" id="userinfo">
+      <label for="companySearch">Company Name</label>
+      <input type="text" id="companySearch" name="companySearch" value="IBM" />
+      <input type="submit" value="Submit" id="companySubmit" />
+    </form>
+
+    <div id="results"></div>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
