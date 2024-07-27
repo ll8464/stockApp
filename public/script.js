@@ -12,8 +12,11 @@ const getData = async () => {
     const response = await fetch(url, { headers: { "User-Agent": "request" } });
     const data = await response.json();
     console.log(data);
-    let arrDisplay = Object.values(data);
-    displayResults.innerHTML = arrDisplay[1].toString();
+
+    //Below works but shows Months of Data UnFormatted
+    displayResults.innerHTML = JSON.stringify(
+      data["Time Series (Daily)"]["2024-07-26"]
+    );
   } catch (err) {
     console.error();
     console.log(err);
